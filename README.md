@@ -9,9 +9,7 @@ Languages: C, C++, Java, HTML, CSS, SQL (MySQL)
 
 Core Concepts: Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP)
 
-Tools & Platforms: Git/GitHub, VS Code, LeetCode, HackerRank, Angel One
-
-Professional Training: ServiceNow Virtual Internship, Web Development (Clinch Fusion Bridge), CodSoft Internship
+Tools & Platforms: Git/GitHub, VS Code, LeetCode
 
 📬 Connect with Me
 I am always open to discussing new projects, internships, or technology.
