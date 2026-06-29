@@ -13,15 +13,6 @@ Tools & Platforms: Git/GitHub, VS Code, LeetCode, HackerRank, Angel One
 
 Professional Training: ServiceNow Virtual Internship, Web Development (Clinch Fusion Bridge), CodSoft Internship
 
-📂 Projects
-Ball Collision Spawner: A canvas-based interactive web animation project demonstrating dynamic object interaction and browser-based rendering.
-
-Note: More projects coming soon as I continue my development journey!
-
-📄 Resume
-You can access my latest professional profile here:
-Download My Resume
-
 📬 Connect with Me
 I am always open to discussing new projects, internships, or technology.
 
