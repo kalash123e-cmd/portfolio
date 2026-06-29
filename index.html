@@ -350,6 +350,85 @@
     line-height: 1.8;
   }
 
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project-card {
+    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(255,255,255,0.03));
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+  }
+
+  .project-visual {
+    padding: 0;
+    background: none;
+    width: 140px;
+    flex-shrink: 0;
+  }
+
+  .project-visual svg {
+    width: 100%;
+    height: 100px;
+    display: block;
+  }
+
+  .project-body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    flex: 1;
+  }
+
+  .project-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-1);
+  }
+
+  .project-copy {
+    color: var(--text-2);
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  .project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: auto;
+    padding-top: 0.2rem;
+  }
+
+  .project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.55rem 0.8rem;
+    border-radius: 999px;
+    color: var(--text-1);
+    text-decoration: none;
+    font-size: 0.8rem;
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,0.04);
+    transition: all 0.2s ease;
+  }
+
+  .project-link:hover {
+    border-color: rgba(99,102,241,0.35);
+    background: rgba(99,102,241,0.12);
+    transform: translateY(-1px);
+  }
+
   .toast {
     position: fixed;
     left: 50%;
@@ -447,7 +526,6 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-
 <main>
 
   <!-- ── HERO ── -->
@@ -537,6 +615,76 @@
         <button class="skill-pill" data-skill="Tools">Tools</button>
       </div>
       <p class="skill-panel-copy" id="skill-copy">Click a category to see what excites me most in that area.</p>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects" class="reveal">
+    <p class="section-label">Projects</p>
+    <div class="project-grid">
+      <article class="project-card">
+        <div class="project-visual" aria-hidden="true">
+          <svg viewBox="0 0 240 120" fill="none">
+            <rect x="24" y="24" width="192" height="72" rx="16" fill="#11121A" stroke="#6D7BFF" stroke-opacity="0.45"/>
+            <rect x="42" y="40" width="56" height="10" rx="5" fill="#6D7BFF"/>
+            <rect x="42" y="58" width="92" height="8" rx="4" fill="#8A92B8"/>
+            <rect x="42" y="74" width="72" height="8" rx="4" fill="#8A92B8"/>
+            <path d="M154 78c9-18 24-30 42-30" stroke="#7C8BFF" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="196" cy="48" r="12" fill="#6D7BFF"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">DSA Problem Tracker</h3>
+          <p class="project-copy">A polished progress tracker for coding practice with streak views, stats, and structured problem logging.</p>
+          <div class="project-links">
+            <a href="https://github.com/kalash123e-cmd/DSA-Problem-Tracker" target="_blank" rel="noopener" class="project-link">GitHub ↗</a>
+            <a href="https://kalash123e-cmd.github.io/DSA-Problem-Tracker/" target="_blank" rel="noopener" class="project-link">View Site ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-visual" aria-hidden="true">
+          <svg viewBox="0 0 240 120" fill="none">
+            <rect x="30" y="28" width="180" height="64" rx="14" fill="#11121A" stroke="#6D7BFF" stroke-opacity="0.45"/>
+            <rect x="46" y="44" width="64" height="10" rx="5" fill="#6D7BFF"/>
+            <rect x="46" y="62" width="92" height="8" rx="4" fill="#8A92B8"/>
+            <rect x="46" y="76" width="74" height="8" rx="4" fill="#8A92B8"/>
+            <rect x="150" y="44" width="34" height="34" rx="8" fill="#7C8BFF"/>
+            <path d="M161 58h12" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+            <path d="M167 52v12" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <!-- <div class="project-body">
+          <h3 class="project-title">Student Result Management</h3>
+          <p class="project-copy">A C++ app for managing student records, marks, and academic history with a simple workflow.</p>
+          <div class="project-links">
+            <a href="https://github.com/kalash123e-cmd/" target="_blank" rel="noopener" class="project-link">GitHub ↗</a>
+            <a href="https://github.com/kalash123e-cmd/" target="_blank" rel="noopener" class="project-link">Source ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-visual" aria-hidden="true">
+          <svg viewBox="0 0 240 120" fill="none">
+            <rect x="30" y="24" width="180" height="72" rx="16" fill="#11121A" stroke="#6D7BFF" stroke-opacity="0.45"/>
+            <rect x="46" y="40" width="66" height="8" rx="4" fill="#6D7BFF"/>
+            <rect x="46" y="56" width="120" height="6" rx="3" fill="#8A92B8"/>
+            <rect x="46" y="70" width="96" height="6" rx="3" fill="#8A92B8"/>
+            <rect x="160" y="40" width="32" height="22" rx="6" fill="#7C8BFF"/>
+            <path d="M166 53l4 4 8-8" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div> -->
+        <div class="project-body">
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-copy">A clean personal site built with HTML, CSS, and JavaScript to present work, skills, and contact details.</p>
+          <div class="project-links">
+            <a href="https://github.com/kalash123e-cmd/portfolio" target="_blank" rel="noopener" class="project-link">GitHub ↗</a>
+            <a href="#hero" class="project-link">View Site ↗</a>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
 
